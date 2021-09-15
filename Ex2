@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        //Faca um programa que leia tres valores inteiros e faca sua soma
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        int resultado = 0;
+        String numero;
+        String numero2;
+        String numero3;
+
+        numero = JOptionPane.showInputDialog(null, "Informe o primeiro valor:");
+        n1 = Integer.parseInt(numero);
+        numero2 = JOptionPane.showInputDialog(null, "Informe o segundo valor:");
+        n2 = Integer.parseInt(numero2);
+        numero3 = JOptionPane.showInputDialog(null, "Informe o terceiro valor:");
+        n3 = Integer.parseInt(numero3);
+
+        resultado = (n1 + n2 + n3);
+        JOptionPane.showMessageDialog(null, resultado, "A soma entre os três números são:", JOptionPane.INFORMATION_MESSAGE);
+
+
+
+    }
+}
