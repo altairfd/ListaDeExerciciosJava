@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        //Faca um programa que leia um numero inteiro
+        //e informe seu sucessor e seu posterior
+
+        int resultado = 0;
+        String numero;
+        
+        numero = JOptionPane.showInputDialog(null, "Digite um número:");
+        resultado = Integer.parseInt(numero);
+        JOptionPane.showMessageDialog(null, resultado, "Você digitou", JOptionPane.INFORMATION_MESSAGE);
+        resultado++;
+        JOptionPane.showMessageDialog(null, resultado, "O próximo número  é:", JOptionPane.INFORMATION_MESSAGE);
+        resultado-= 2;
+        JOptionPane.showMessageDialog(null, resultado, "O núemro anterior é", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+}
