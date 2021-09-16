@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        // Converta Km para Ms 
+        String veloKm;
+        float km = 0f;
+        float ms = 0f;
+
+        veloKm = JOptionPane.showInputDialog(null, "informe a velocidade em Km");
+        km = Float.parseFloat(veloKm);
+        ms = (km+36);
+        JOptionPane.showMessageDialog(null, ms, "A velocidade em M/s é", JOptionPane.INFORMATION_MESSAGE); 
+
+    }
+}
