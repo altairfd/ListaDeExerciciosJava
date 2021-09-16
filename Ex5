@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        // Cotacao do dolar 
+        float reais = 0f;
+        float dolar = 0f;
+        float resultado = 0f;
+        String cotacao;
+        
+        cotacao = JOptionPane.showInputDialog(null, "Digite o valor em reais;");
+        reais = Float.parseFloat(cotacao);
+        resultado = (reais * 5.27f);
+        JOptionPane.showMessageDialog(null, resultado, "O Valor em dolar é:", JOptionPane.INFORMATION_MESSAGE);
+
+        
+
+    }
+}
