@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        // Graus Celsius para Fahrenheit
+        float celsius = 0f;
+        float fahrenheit = 0f;
+        String tempe;
+
+        tempe = JOptionPane.showInputDialog(null, "Informe a temperatura em graus Celsius");
+        celsius = Float.parseFloat(tempe);
+        fahrenheit = celsius * (9.0f/5.0f) + 32.0f;
+        JOptionPane.showMessageDialog(null, fahrenheit, "A temperatura em Fahrenheit é:", JOptionPane.INFORMATION_MESSAGE);
+        
+    }
+}
