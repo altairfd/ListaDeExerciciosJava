@@ -1,0 +1,62 @@
+import javax.swing.JOptionPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+    //Calculadora
+    
+    String pergunta;
+    String valor1;
+    String valor2;
+    int controle;
+    int n1;
+    int n2;
+    int resultado;
+
+    JOptionPane.showMessageDialog(null, "Informe a oepração a ser realiada", "Calculadora", JOptionPane.INFORMATION_MESSAGE);
+    pergunta = JOptionPane.showInputDialog(null, "1 - Somar" + "\n" + "2 - Subtração" + "\n" + "3 - Multiplicação" + "\n" + "4 - Divisão", "Operação", JOptionPane.QUESTION_MESSAGE);
+    controle = Integer.parseInt(pergunta);
+
+    switch (controle) {
+        case 1:
+            valor1 = JOptionPane.showInputDialog(null, "Informe o primeiro valor:");
+            n1 = Integer.parseInt(valor1);
+            valor2 = JOptionPane.showInputDialog(null, "Informe o segundo valor: ");
+            n2 = Integer.parseInt(valor2);
+            resultado = (n1 + n2);
+            JOptionPane.showMessageDialog(null, "O resultado da soma é: " + resultado, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            break;
+
+        case 2:
+            valor1 = JOptionPane.showInputDialog(null, "Informe o primeiro valor:");
+            n1 = Integer.parseInt(valor1);
+            valor2 = JOptionPane.showInputDialog(null, "Informe o segundo valor: ");
+            n2 = Integer.parseInt(valor2);
+            resultado = (n1 - n2); 
+            JOptionPane.showMessageDialog(null, "O resultado da subtração" + resultado, "Subtração", JOptionPane.INFORMATION_MESSAGE);
+            break;
+
+        case 3:
+            valor1 = JOptionPane.showInputDialog(null, "Informe o primeiro valor:");
+            n1 = Integer.parseInt(valor1);
+            valor2 = JOptionPane.showInputDialog(null, "Informe o segundo valor: ");
+            n2 = Integer.parseInt(valor2);
+            resultado = (n1 * n2);
+            JOptionPane.showMessageDialog(null, "O resultado da multiplicação é: " + resultado, "Multiplicação" , JOptionPane.INFORMATION_MESSAGE); 
+            break;
+        
+        case 4:
+            valor1 = JOptionPane.showInputDialog(null, "Informe o primeiro valor:");
+            n1 = Integer.parseInt(valor1);
+            valor2 = JOptionPane.showInputDialog(null, "Informe o segundo valor: ");
+            n2 = Integer.parseInt(valor2);
+            resultado = (n1 / n2);
+            JOptionPane.showMessageDialog(null, "O resultado da divisão é: " + resultado, "Divisão" , JOptionPane.INFORMATION_MESSAGE); 
+            break;
+        
+        default:
+            JOptionPane.showMessageDialog(null, "Informe uma opção válida", "Erro", JOptionPane.INFORMATION_MESSAGE);
+            break;
+    }
+  }
+}
