@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        // 780.000,00 dividido por tres ganhadores de um concurso 
+        float premio = 780000.00f;
+        float ganhador1;
+        float ganhador2;
+        float ganhador3;
+
+        ganhador1 = premio*0.46f;
+        ganhador2 = premio*0.32f;
+        ganhador3 = premio*0.22f;
+
+        JOptionPane.showMessageDialog(null, "O primeiro ganhador receberá 46% do prêmio" + "\n" + "Que será: " + ganhador1 + "0", "Primeira premiação", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "O segundo ganhador receberá 32% do prêmio" + "\n" + "Que será: " + ganhador2 + "0", "Segunda premiação", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "E o terceiro ganhador receberá o restante" + "\n" + "Que será: " + ganhador3 + "0", "Terceiro prêmio", JOptionPane.INFORMATION_MESSAGE);
+    }
+}
