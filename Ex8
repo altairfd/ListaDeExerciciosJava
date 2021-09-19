@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        // Leia o valor da area de um circulo 
+        double raio;
+        double a;
+        String valor;
+
+        valor = JOptionPane.showInputDialog(null, "Informe o valor da área do círculo");
+        raio = Float.parseFloat(valor);
+        a = Math.PI * Math.pow(raio, 2);
+        JOptionPane.showMessageDialog(null, a, "O valor da área do círculo é:", JOptionPane.INFORMATION_MESSAGE);
+        
+    }
+}
