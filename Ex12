@@ -1,0 +1,33 @@
+import javax.swing.JOptionPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+    //Mostre o maior numero
+    String valor1;
+    String valor2;
+    double n1;
+    double n2;
+    double maior;
+
+    valor1 = JOptionPane.showInputDialog(null, "Informe o primeiro valor: ");
+    n1 = Double.parseDouble(valor1);
+    valor2 = JOptionPane.showInputDialog(null, "Informe o segundo número: ");
+    n2 = Double.parseDouble(valor2);
+
+    if (n1 > n2) {
+        maior = n1;
+        JOptionPane.showMessageDialog(null, "O maior número é: " + maior, "Maior número", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    else if (n2 > n1) {
+        maior = n2;
+        JOptionPane.showMessageDialog(null, "O maior númerio é: " + maior, "O maior númerio", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    else if (n1 == n2 || n2 == n1) {
+        JOptionPane.showMessageDialog(null, "Números iguais", "Igualdade", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+  }
+}
