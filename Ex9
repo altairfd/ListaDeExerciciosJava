@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+    
+        //Hipotenusa
+        
+        double a;
+        double b;
+        double h;
+        String cateto1;
+        String cateto2;
+
+        cateto1= JOptionPane.showInputDialog(null, "Informe o valor do cateto a:");
+        a = Double.parseDouble(cateto1);
+        cateto2 = JOptionPane.showInputDialog(null, "Informe o valor do cateto b");
+        b = Double.parseDouble(cateto2);
+        h = Math.hypot(a, b);
+        JOptionPane.showMessageDialog(null, h, "O resultado é: ", JOptionPane.INFORMATION_MESSAGE);
+
+    }
+}
