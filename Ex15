@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+   //Peso ideal para homens e mulheres
+   String pergunta;
+   String pergunta2;
+   int sexo;
+   double altura;
+   double peso;
+
+   pergunta = JOptionPane.showInputDialog(null, "Informe o sexo da pessoa:" + "\n" + "1 - Masculino" + "\n" + "2 - Feminino");
+   sexo = Integer.parseInt(pergunta);
+   pergunta2 = JOptionPane.showInputDialog(null, "Informe a altura: ");
+   altura = Double.parseDouble(pergunta2);
+
+   switch (sexo) {
+      case 1:
+         peso = (72.2*altura)-58;
+         JOptionPane.showMessageDialog(null, "O peso ideal é: " + peso, "Peso", JOptionPane.INFORMATION_MESSAGE);
+         break;
+
+      case 2:
+         peso = (62.1*altura)-44.7;
+         JOptionPane.showMessageDialog(null, "O peso ideal é: " + peso, "Peso", JOptionPane.INFORMATION_MESSAGE);
+         break;
+         
+      default:
+         JOptionPane.showMessageDialog(null, "Selecione uma opção válida", "Erro", JOptionPane.ERROR_MESSAGE);
+         break;
+   }
+
+  }
+}
