@@ -1,0 +1,34 @@
+import javax.swing.JOptionPane;
+import javax.swing.JRootPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+    //emrpestimo
+    String sal;
+    String emp;
+    double salario;
+    double parcela;
+    double prestacao;
+    double comparacao; 
+
+    sal = JOptionPane.showInputDialog(null, "Informe o salário do cliente: ");
+    salario = Double.parseDouble(sal);
+    emp = JOptionPane.showInputDialog(null, "Informe o valor da prestação do empréstimo: ");
+    parcela= Double.parseDouble(emp);
+
+    // Calculo da prestacao 
+    prestacao = (parcela * 0.2);
+    comparacao = (salario * 0.2);
+
+    //Resultado
+    if (parcela > comparacao) {
+        JOptionPane.showMessageDialog(null, "Empréstimo negado");
+    }
+
+    else if (parcela < comparacao) {
+        JOptionPane.showMessageDialog(null, "Empréstimo aprovado");
+    }
+
+  }
+}
