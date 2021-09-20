@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+    //Calcule a raiz quadrada de um núemro e eleve ao quadrado caso ele seja positivo
+    
+    String numero;
+    double n1;
+    double resultado1;
+    double resultado2;
+
+    numero = JOptionPane.showInputDialog(null, "Informe um número qualqeur: ");
+    n1 = Double.parseDouble(numero);
+
+    if (n1 > 0) {
+       resultado1 = Math.pow(n1, 2);
+       resultado2 = Math.sqrt(n1);
+
+       JOptionPane.showMessageDialog(null, "O valor do número digitado ao quadrado é: " +resultado1, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+       JOptionPane.showMessageDialog(null, "A raiz quadrada do número digitado é: " + resultado2, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    else if (n1 < 0) {
+        JOptionPane.showMessageDialog(null, "O número é negativo");
+    }
+
+  }
+}
