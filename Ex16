@@ -1,0 +1,51 @@
+import javax.swing.JOptionPane;
+
+public class App {
+   public static void main(String[] args) throws Exception {
+    
+   //Valor do produto e imposto
+   String local;
+   String produto;
+   int estado;
+   double valor;
+   double imposto;
+   double valorF;
+
+   produto = JOptionPane.showInputDialog(null, "Informe o valor do produto: ");
+   valor = Double.parseDouble(produto);
+   JOptionPane.showMessageDialog(null, "Informe a seguir de qual estado a compra sera realizada", "Estado", JOptionPane.INFORMATION_MESSAGE);
+   local = JOptionPane.showInputDialog(null, "1 - MG" + "\n" + "2 - SP" + "\n" + "3 - RJ" + "\n" + "4 - MS");
+   estado = Integer.parseInt(local);
+   
+   switch (estado) {
+      case 1:
+         imposto = (valor*0.07);
+         valorF = (imposto + valor);
+         JOptionPane.showMessageDialog(null, "O valor da unidade do produto é de: " + valorF, "Preço do produto", JOptionPane.INFORMATION_MESSAGE);
+         break;
+      
+      case 2:
+         imposto = (valor*0.12);
+         valorF = (imposto + valor);
+         JOptionPane.showMessageDialog(null, "O valor da unidade do produto é de: " + valorF, "Preço do produto", JOptionPane.INFORMATION_MESSAGE);
+         break;
+
+      case 3:
+         imposto = (valor*0.15);
+         valorF = (imposto + valor);
+         JOptionPane.showMessageDialog(null, "O valor da unidade do produto é de: " + valorF, "Preço do produto", JOptionPane.INFORMATION_MESSAGE);
+         break;
+      case 4:
+         imposto = (valor*0.08);
+         valorF = (imposto + valor);
+         JOptionPane.showMessageDialog(null, "O valor da unidade do produto é de: " + valorF, "Preço do produto", JOptionPane.INFORMATION_MESSAGE);
+         break;
+
+      default:
+         JOptionPane.showMessageDialog(null, "Estado inválido" + "\n" + "Seleicone um dos estados citado anteriormente", "Opção inválida", JOptionPane.ERROR_MESSAGE);
+         break;
+      
+   }
+
+  }
+}
