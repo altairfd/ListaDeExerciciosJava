@@ -1,0 +1,68 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        //Imprima o mes pelo número digitado Ex: 4 - Abril
+
+        String numero;
+        int mes;
+
+        numero = JOptionPane.showInputDialog(null, "Digite o número do mês: ");
+        mes = Integer.parseInt(numero);
+
+        switch (mes) {
+            case 1:
+                JOptionPane.showMessageDialog(null, "1 - Janeiro", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 2:
+                JOptionPane.showMessageDialog(null, "2 - Fevereorp", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null, "3 - Março", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 4:
+                JOptionPane.showMessageDialog(null, "4 - Abril", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 5:
+                JOptionPane.showMessageDialog(null, "5 - Maio", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+
+            case 6:
+                JOptionPane.showMessageDialog(null, "6 - Junho", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+
+            case 7:
+                JOptionPane.showMessageDialog(null, "7 - Julho", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 8:
+                JOptionPane.showMessageDialog(null, "8 - Agosto", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+
+            case 9:
+                JOptionPane.showMessageDialog(null, "9 - Setembro", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 10:
+                JOptionPane.showMessageDialog(null, "10 - Outubro", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            
+            case 11:
+                JOptionPane.showMessageDialog(null, "11 - Novembro", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+
+            case 12:
+                JOptionPane.showMessageDialog(null, "12 - Dezembro", "Mês", JOptionPane.INFORMATION_MESSAGE);
+                break;
+
+            default:
+                JOptionPane.showMessageDialog(null, "Informe um mês valido");
+                break;
+        }
+
+    }   
+}
