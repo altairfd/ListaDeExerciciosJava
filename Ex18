@@ -1,0 +1,49 @@
+        //Clissifique a altura e o peso de uma pessoa
+
+        String pergunta;
+        String pergunta2;
+        double peso;
+        double altura;
+
+        pergunta = JOptionPane.showInputDialog(null, "Informe o peso: ");
+        peso = Double.parseDouble(pergunta);
+        pergunta2 = JOptionPane.showInputDialog(null, "Informe a altura: ");
+        altura = Double.parseDouble(pergunta2);
+
+        if (altura <= 1.20 & peso <= 60.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: A", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura <= 1.20 & peso <= 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: D", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (altura <= 1.20 & peso > 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: G", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura <= 1.70 & peso <= 60.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: B", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura <= 1.70 & peso <= 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: E", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura <= 1.70 & peso > 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: H", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura > 1.70 & peso <= 60.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: C", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura > 1.70 & peso <= 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: F", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        else if (altura > 1.70 & peso > 90.0 ) {
+            JOptionPane.showMessageDialog(null, "Classificação: I", "Classificação", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+}
